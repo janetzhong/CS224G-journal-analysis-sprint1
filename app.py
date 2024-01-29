@@ -10,10 +10,10 @@ except KeyError:
         anthropic_api_key = st.text_input("Anthropic API Key", key="journal_api_key", type="password")
         st.markdown("[View the source code](https://github.com/janetzhong/brain-real-estate-website)")
 
-st.title("📝 Journal Analysis with Anthropic")
+st.title("📝 Brain Real Estate with Anthropic")
 
 # Text area for journal input
-journal_text = st.text_area("Input your journal", placeholder="Type your journal here...", height=300)
+journal_text = st.text_area("Input your journal, reccommended ~200+ words", placeholder="Type your journal here...", height=300)
 
 
 # Brain real estate
@@ -85,5 +85,7 @@ if submit_button and journal_text and anthropic_api_key:
         make_brain_real_estate_plot(response.completion)
         # Display the detailed text response from the API
         st.write(response.completion)
+        st.text("For debugging:")
+        st.text(response.completion)
     except Exception as e:
         st.error(f"An error occurred: {str(e)}")
