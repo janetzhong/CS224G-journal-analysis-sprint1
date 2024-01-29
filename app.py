@@ -8,7 +8,7 @@ try:
 except KeyError:
     with st.sidebar:
         anthropic_api_key = st.text_input("Anthropic API Key", key="journal_api_key", type="password")
-        st.markdown("[View the source code](https://github.com/your-repository/your-code)")
+        st.markdown("[View the source code](https://github.com/janetzhong/brain-real-estate-website)")
 
 st.title("📝 Journal Analysis with Anthropic")
 
