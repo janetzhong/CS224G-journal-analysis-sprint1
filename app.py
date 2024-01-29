@@ -12,6 +12,10 @@ except KeyError:
 
 st.title("📝 Brain Real Estate with Anthropic")
 
+# Link to view the source code
+source_code_url = "https://github.com/janetzhong/brain-real-estate-website"
+st.markdown(f"[View Source Code]({source_code_url})", unsafe_allow_html=True)
+
 # Text area for journal input
 journal_text = st.text_area("Input your journal, reccommended ~200+ words", placeholder="Type your journal here...", height=300)
 
