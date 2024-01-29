@@ -1,3 +1,4 @@
 # cs224g-journal-analysis-sprint1
 
-https://cs224g-journal-analysis-sprint1.streamlit.app/
+Brain real estate pie graph
+https://brain-real-estate-journal-analysis.streamlit.app/
