@@ -64,7 +64,7 @@ def make_brain_real_estate_plot(analysis_text):
 # Brain Real Estate App code
 if submit_button and journal_text and anthropic_api_key:
     # Updated prompt with specific instructions for output format and to exclude closing remarks
-    question = "if you had to make a pie chart of my brain real estate over the week, what are the five themes you would classify it as? Include only themes, percentages and description, without other remarks"
+    question = "if you had to make a pie chart of my brain real estate over the week, what are the five themes you would classify it as? Include as numbered list with theme title, percentages and description, without other remarks"
     prompt = f"{anthropic.HUMAN_PROMPT} Here's a journal entry:\n\n{journal_text}\n\n{question}\n\n{anthropic.AI_PROMPT}"
 
     # Initialize the Anthropics client with the provided API key

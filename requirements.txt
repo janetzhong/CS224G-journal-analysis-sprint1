@@ -11,6 +11,7 @@ click==8.1.7
 contourpy==1.2.0
 cycler==0.12.1
 distro==1.9.0
+docopt==0.6.2
 exceptiongroup==1.2.0
 filelock==3.13.1
 fonttools==4.47.2
@@ -36,6 +37,7 @@ numpy==1.26.3
 packaging==23.2
 pandas==2.2.0
 pillow==10.2.0
+pipreqs==0.4.13
 protobuf==4.25.2
 pyarrow==15.0.0
 pydantic==2.5.3
@@ -65,4 +67,5 @@ tzdata==2023.4
 tzlocal==5.2
 urllib3==2.1.0
 validators==0.22.0
+yarg==0.1.9
 zipp==3.17.0
